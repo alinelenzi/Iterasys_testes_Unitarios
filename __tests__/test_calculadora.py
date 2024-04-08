@@ -50,4 +50,16 @@ def test_dividir_dois_numeros():
     #Validar
     assert resultado_esperado == resultado_obtido
 
+def test_dividir_por_zero():
+    num1 = 35;
+    num2 = 0;
+    resultado_esperado = "Erro: Não é possível dividir por zero.";
+
+    #Executar
+    resultado_obtido = dividir_dois_numeros(num1, num2);
+
+    #Validar
+    assert resultado_esperado == resultado_obtido
+
+
 
